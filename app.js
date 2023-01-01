@@ -10,7 +10,6 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
 const dotenv = require('dotenv').config();
 mongoose.connect(process.env.DATABASE_URL || "mongodb://localhost:27017", { useNewUrlParser: true });
 
@@ -138,6 +137,7 @@ app.get("/about", function (req, res) {
   return res.render("about");
 });
 
-app.listen(3000, function () {
+const port = process.env.PORT || 3000;
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });
