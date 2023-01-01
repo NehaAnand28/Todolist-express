@@ -1,6 +1,6 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #f08127 60%, #E4E9FD 50%);
+  background-image: -webkit-linear-gradient(45deg, #f08127 60%, #E4E9FD 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -63,9 +63,10 @@ button {
   border-color: transparent;
   background-color: #f08127;
   color: #fff;
-  font-size: 30px;
-  padding-bottom: 6px;
+  font-size: 40px;
+  /* padding-bottom: 6px; */
   border-width: 0;
+  text-align: center;
 }
 
 input[type="text"] {
