@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+const dotenv = require('dotenv').config();
 mongoose.connect(process.env.DATABASE_URL || "mongodb://localhost:27017", { useNewUrlParser: true });
 
 const itemsSchema = new mongoose.Schema({
